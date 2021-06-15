@@ -1,4 +1,0 @@
-Program spends most of its time in functions -> is_num(), func_sum() and power(), which are also called the most times.
-The slowest function is root(), which takes about 3*10^-7 seconds of time.
-For the future optimalizations we should focus on accelerating this function.
-

@@ -1,3 +1,0 @@
-Pri vývoji kalkulačky sme zistili rozdielnosť medzi očakávaným plánom a reálnym vývojom:
-1. Nedodoržanie stanovených termínov.
-2. Iné prerozdelenie z dôvodu neuvedomenia si rozsahu úloh.

@@ -1,4 +1,0 @@
-xbinov00 100 (testy, doxyfile, plánovanie, dokumentácia, uživateľská príručka, mockup)
-xlapes02 100 (matematická knižnica, Makefile, debugging.png, README.md, mockup)
-xsokov01 100 (prepojenie GUI a matematickej knižnice, profiler, inštalátor, odinštalátor, sprievodca inštaláciou, mockup)
-xsmeka16 100 (užívateľské rozhranie - GUI, mockup)
