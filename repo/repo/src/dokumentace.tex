@@ -1,0 +1,116 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[left=2cm, top=3cm, text={17cm, 24cm}]{geometry}
+\usepackage[slovak]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphics}
+\usepackage[unicode]{hyperref}
+
+\author{Andrej Bínovský\\ \url{xbinov00@fit.vutbr.cz} }
+
+
+\begin{document}
+	\begin{titlepage}
+		\begin{center}
+			\Huge
+			\textsc{Vysoké učení technické v~Brně}\\
+			\huge\textsc{Fakulta informačních technologií}\\
+			\vspace{\stretch{0.382}}
+			
+				
+            \Huge{Praktické aspekty vývoje software\\}
+				\huge{Projekt 2 \,--\, týmová spolupráca\\
+                        Uživatelská dokumentácia}
+						
+			\vspace{\stretch{0.618}}		
+		
+		\end{center}
+        \begin{flushleft}
+            \Large{ Bínovský Andrej (xbinov00)}\\
+            \Large{Lapeš Zdeněk (xlapes02)}\\
+            \Large{Smékal Samuel (xsmeka16)}
+        \end{flushleft}
+        \vspace{-4mm}
+        \Large{Šoková Lenka (xsokov01)}
+        \hfill\Large{\today}
+	\end{titlepage}
+    
+    \section*{Inštalácia na systém Linux Ubuntu}
+    
+    \begin{itemize}
+        \item 1. varianta
+        \begin{itemize}
+            \item Otvorte súbor \textbf{calculator\_1.0\_amd64.deb}.
+            \item Kliknite na ikonku \textbf{install}.
+            \item Zadajte heslo uživateľa systému a následne potvrďte tlačidlom \textbf{authenticate}.
+            \item Inštalácia prebehne automaticky a kalkulačka sa pridá do zoznamu aplikacií systému.
+        \end{itemize}
+        \item 2. varianta (pre pokročilých uživateľov)
+        \begin{itemize}
+            \item Otvorte aplikáciu \textbf{terminal}.
+            \item Dostante sa do priečinku s výskytom súbor \textbf{calculator\_1.0\_amd64.deb}.
+            \item Zadajte príkaz \textbf{sudo dpkg -i calculator\_1.0\_amd64.deb} a následne potvrďte tlačidlom \textbf{enter}.
+            \item Zadajte heslo uživateľa systému a potvrďte tlačidlom \textbf{enter}.
+            \item Inštalácia prebehne automaticky a kalkulačka sa pridá do zoznamu aplikacií systému.
+        \end{itemize}
+    \end{itemize}
+     
+    \section*{Odinštalácia zo systému Linux Ubuntu}
+    \begin{itemize}
+        \item 1. varianta
+        \begin{itemize}
+            \item Otvorte aplikáciu \textbf{Ubuntu Software}.
+            \item Prejdite do sekcie \textbf{Installed} a následne do subsekcie  \textbf{Add--ons}.
+            \item Nájdite kalkulačku s názvom \textbf{calculator} a kliknite na \textbf{remove}.
+            \item Zadajte heslo uživateľa systému a potvrďte tlačidlom \textbf{authenticate}.
+            \item Odinštalácia prebehne automaticky a kalkulačka sa odstráni zo zoznamu aplikacií systému.
+        \end{itemize}
+        \item 2. varianta (pre pokročilých uživateľov)
+        \begin{itemize}
+            \item Otvorte aplikáciu \textbf{terminal}.
+            \item Zadajte príkaz \textbf{sudo apt-get remove calculator} a následne potvrďte tlačidlom \textbf{enter}.
+            \item Zadajte heslo uživateľa systému a potvrďte tlačidlom \textbf{enter}.
+            \item Odinštalácia prebehne automaticky a kalkulačka sa odstráni zo zoznamu aplikacií systému.
+        \end{itemize}
+    \end{itemize}
+    \newpage
+
+    \section*{Návod na použitie}
+    \begin{itemize}
+        \item Otvorte kalkulačku.
+        \item Kalkulačka sa ovláda myšou, pomocou ktorej môžete lavým tlačidlom naťukať číselné\\hodnoty/operácie.
+        \item Taktiež je dostupné zadávanie cez klávesnicu.
+        \item Pre zmazanie celého výrazu zobrazeného na displeji stlačte znak \fbox{ \textbf{C} }
+        \item Pre zmazanie jedného znaku zobrazeného na displeji stlačte  \fbox{ \textbf{DEL} }
+        \item Kalkulačka podporuje desatinné čísla, ktoré sa zadavajú znakom \fbox{\textbf{ , }}
+        \item Pre výpočet $n$-tej odmocniny zadajte $n$ a následne stlačte  \fbox{\ $\sqrt[n]{x}$\ }
+        \item Výsledok zadanej rovnice sa zobrazí na displeji po stlačení znaku \fbox{ $ = $ }
+        \item Dostupné operácie:
+        \begin{itemize}
+            \item sčítanie \fbox{\ $+$\ } 
+            \item odčítanie \fbox{\ $-$\ } 
+            \item násobenie \fbox{\ $\times$\ } 
+            \item delenie \fbox{\ $\div$\ } 
+        \end{itemize}
+        \item Dostupné matematiké funkcie:
+        \begin{itemize}
+            \item Druhá mocnina  \fbox{\ $x^2$\ } 
+            \item N-tá mocnina  \fbox{\ $x^n$\ } 
+            \item Druhá odmocnina  \fbox{\ $\sqrt[2]{x}$\ } 
+            \item $N$-tá odmocnina  \fbox{\ $\sqrt[n]{x}$\ } 
+            \item Faktoriál  \fbox{\ $!$\ } 
+            \item Sínus  \fbox{\ $\sin{x}$\ } 
+            \item Kosínus  \fbox{\ $\cos{x}$\ } 
+            \item Tangens  \fbox{\ $\tan{x}$\ } 
+        \end{itemize}
+        \item Priorita operácií (od najväčšej po najmenšiu prioritu):
+        \begin{itemize}
+            \item Zátvorky \fbox{\ $(\ \ )$\ } 
+            \item Funkcie, násobenie, delenie
+            \item Sčítanie, odčítanie
+        \end{itemize}
+        \textbf{Poznámka: Pri rovnakej priorite sa výraz vyhodnocuje zľava doprava.}
+\item Nápoveda sa vám zobrazí po zakliknutí na znak \fbox{\ \textbf{[HELP]}\ } v ľavom hornom rohu.
+        \item Minimalizácia aplikácie sa vykoná po zakliknutí na znak \fbox{\ \textbf{--}\ }  v pravom hornom rohu.
+        \item Vypnutie aplikácie sa vykoná po zakliknutí na znak \fbox{\ \textbf{$\times$}\ }  v pravom hornom rohu.
+    \end{itemize}
+\end{document}
